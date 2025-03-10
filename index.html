@@ -1,19 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Realistic3D Research Group</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realistic 3D</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+  <style>
+    /* Hover effect for the card */
+    .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+  }
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  /* Slight brightness effect for image on hover */
+  .card:hover .card-image img {
+    filter: brightness(1.1);
+    transition: filter 0.3s ease;
+  }
+  .card-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  .card-image {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+  }
+  .card-image img {
+    max-height: 100%;
+    width: auto;
+  }
   </style>
 </head>
 <body>
-  <h1>Realistic3D Research Group</h1>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://realistic3d-miun.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Recent Publications
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/LFSphereNet/LFSphereNet.html">
+            LFSphereNet
+          </a>
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/SLFDB/SLFDB.html">
+            SLFDB
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Realistic 3D - Mid Sweden University</h2>
+            <div class="column has-text-centered">
+              <img src="./assets/Realistic3D.png" style="height: 100px;">
+              <img src="./assets/Mid_Sweden_University_Logo.svg.png" style="height: 100px;">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">About</h2>
+        <div class="content has-text-justified">
+          <p>
+            The research at Realistic 3D is on Multidimensional Imaging and Visualization with focus on Multiscopic 3D Capture, Coding and Visualization.
+            The research group Realistic 3D is developing future 3D visualization for entertainment and industry, focusing on improving capture, compression, and presentation technology by making use of sophisticated signal and image processing.
+          </p>
+        </div>
+      </div>
+    </div>
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Recent Publications</h2>
+    <!------Start -  Card Layout for Recent Publications----->
+    <!-- Publication Cards Start -->
+    <div class="columns is-multiline">
+      <!-- SLFDB -->
+      <a href="./Research/SLFDB/SLFDB.html">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">SLFDB: A Spherical Light Field Database for Immersive Telecommunication and Telepresence Applications</h3>
+            <p class="subtitle is-6">16th International Conference on Quality of Multimedia Experience(QoMEX 2024), Karlshamn, Sweden</p>
+          </div>
+          <div class="card-image">
+            <figure class="image">
+              <img src="./assets/SLFDB.png" alt="SLFDB Teaser Image">
+            </figure>
+          </div>
+        </div>
+      </a>
+      <!-- LFSphereNet -->
+      <a href="./Research/LFSphereNet/LFSphereNet.html">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">LFSphereNet: Real Time Spherical Light Field Reconstruction from a Single Omnidirectional Image</h3>
+            <p class="subtitle is-6">20th ACM SIGGRAPH European Conference on Visual Media Production(CVMP 2023), London, UK</p>
+          </div>
+          <div class="card-image">
+            <figure class="image">
+              <img src="./assets/LFSphereNet_Pipeline.png" alt="LFSphereNet Teaser Image">
+            </figure>
+          </div>
+        </div>
+      </a>
+      </div>
+    </div> <!-- End of columns -->
+    <!------End -  Card Layout for Recent Publications----->
+  </div>
+</div>    
+  </div>
+</div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We thank authors of Nerfies for opensourcing their website template. Link to their: <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

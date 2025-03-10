@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLFDB</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./public/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://realistic3d-miun.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/LFSphereNet/LFSphereNet.html">
+            LFSphereNet
+          </a>
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/SLFDB.html">
+            SLFDB
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SLFDB: A Spherical Light Field Database for Immersive
+            Telecommunication and Telepresence Applications</h1>
+          <h2>16th International Conference on Quality of Multimedia Experience(QoMEX 2024), Karlshamn, Sweden</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=S44_XWsAAAAJ&hl=en">Emin Zerman</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://3zadessg.github.io/">Manu Gond</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=7kJHUk8AAAAJ&hl=en">Soheib Takhtardeshir</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=wd32zLMAAAAJ&hl=en">Roger Olsson</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=EEMg1vMAAAAJ&hl=en">Mårten Sjöström</a><sup>1</sup>,
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Mid Sweden University</span>
+            <span class="author-block"><sup>2</sup>Technical University Berlin</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10598264"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1890318"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper OpenAccess Copy</span>
+                </a>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://zenodo.org/doi/10.5281/zenodo.10641169"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./public/images/SLFDB.png"
+      class="interpolation-image"/>
+      <h2 class="subtitle has-text-centered">
+        Example of Light Field Navigation
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Immersive imaging technologies provide an enhanced user experience for visual applications and are getting ready for commonplace use by the industry and the general populace. In particular, light field is a promising technology that enables the capture and reproduction of real light rays from the scene, which can provide a backbone for immersive telecommunication and telepresence applications. Nevertheless, there are still many challenges in transmitting and reproducing light field data. This paper proposes a spherical light field dataset that can be used as a foundation for developing telepresence applications. The Spherical Light Field Database (SLFDB) consists of a light field of 60 views captured with an omnidirectional camera in 20 scenes. To show the usefulness of the proposed database, we provide two use cases: compression and viewpoint estimation. The initial results validate that the publicly available SLFDB will benefit the scientific community.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <!-- Dataset Preview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Preview</h2>
+        <p>Below is a preview of our dataset. Chick on thumbnails to exapnd full 360 view in low resolution</p>
+        <div class="mdl-grid" id="card-container">
+          <!---- The Grid Should Go Here ---->
+      </div>
+      </div>
+    </div>
+    <!--- /Dataset Preview.  --->
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Light Field Visualization</h2>
+      <p>Below are few example of light field visualization (for faster loading we use low resolution).</p>
+      <div class="mdl-grid" id="card-container-lf">
+      </div>
+    </div>
+  </div>
+  <!--- /Dataset Preview.  --->
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@INPROCEEDINGS{10598264,
+      author={Zerman, Emin and Gond, Manu and Takhtardeshir, Soheib and Olsson, Roger and Sjöström, Mårten},
+      booktitle={2024 16th International Conference on Quality of Multimedia Experience (QoMEX)}, 
+      title={A Spherical Light Field Database for Immersive Telecommunication and Telepresence Applications}, 
+      year={2024},
+      pages={200-206},
+      keywords={Industries;Visualization;Telepresence;Databases;Lighting;Rendering (computer graphics);Light fields;light field;omnidirectional;compression;view synthesis;telepresence},
+      doi={10.1109/QoMEX61742.2024.10598264}}
+    </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We thank authors of Nerfies for opensourcing their website template. Link to their: <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const images = [];
+  for (let i = 0; i < 20; i++) {
+      images.push(`./public/images/Thumbnails/${i}_resized.png`);
+  }
+
+  const cardContainer = document.getElementById('card-container');
+
+  images.forEach((image, index) => {
+    const card = document.createElement('div');
+    card.classList.add('demo-card');
+    card.style.backgroundImage = `url(${image})`;
+    card.style.width = '150px';
+    card.style.height = '150px';
+    card.style.margin = '10px';
+    card.style.borderRadius = '5px'
+    card.style.backgroundSize = 'cover';
+    card.style.display = 'inline-block';
+
+    card.addEventListener('click', function() {
+      var currentUrl = window.location.href;
+      currentUrl = currentUrl.replace("/SLFDB.html","");
+      var newUrl = currentUrl + "/scene_"+index+".html";
+      window.location.href = newUrl;
+    });
+
+    const centeredText = document.createElement('div');
+    centeredText.classList.add('centered-text');
+    centeredText.innerText = `Scene ${index}`;
+    centeredText.style.color = 'white';
+    centeredText.style.padding = '5px';
+    centeredText.style.backgroundColor = 'black';
+    centeredText.style.borderRadius = '5px';
+    
+    card.appendChild(centeredText);
+    
+    cardContainer.appendChild(card);
+  });
+
+  /*==================*/
+  const LFimages = [];
+  const urlList = [];
+  const scenenameList = [];
+  LFimages.push(`./public/images/scene_3/f001.png`); urlList.push("/LF_Scene_3.html"); scenenameList.push("LF Scene 3");
+  LFimages.push(`./public/images/scene_6/f001.png`); urlList.push("/LF_Scene_6.html"); scenenameList.push("LF Scene 6");  
+  const cardContainerLF = document.getElementById('card-container-lf');
+  
+    LFimages.forEach((image, index) => {
+      const card = document.createElement('div');
+      card.classList.add('demo-card');
+      card.style.backgroundImage = `url(${image})`;
+      card.style.width = '150px';
+      card.style.height = '150px';
+      card.style.margin = '10px';
+      card.style.borderRadius = '5px'
+      card.style.backgroundSize = 'cover';
+      card.style.display = 'inline-block';
+      card.addEventListener('click', function() {
+        var currentUrl = window.location.href;
+        currentUrl = currentUrl.replace("/SLFDB.html","")
+        var newUrl = currentUrl + urlList[index];
+        console.log(newUrl);
+        window.location.href = newUrl;
+      });
+      const centeredText = document.createElement('div');
+      centeredText.classList.add('centered-text');
+      centeredText.innerText = scenenameList[index];
+      centeredText.style.color = 'white';
+    centeredText.style.padding = '5px';
+    centeredText.style.backgroundColor = 'black';
+    centeredText.style.borderRadius = '5px';
+
+      card.appendChild(centeredText);
+      cardContainerLF.appendChild(card);
+    });
+});
+</script>
+</body>
+</html>
