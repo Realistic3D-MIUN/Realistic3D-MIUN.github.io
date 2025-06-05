@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Visual Quality of Experience Toolkit for Realistic Immersive Telepresence Applications.">
+  <meta name="keywords" content="VISTA, VISTA-Q, VISTA-Q-ToolKit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VISTA-Q-ToolKit</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://3zadessg.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/LFSphereNet/LFSphereNet.html">
+            LFSphereNet
+          </a>
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/SLFDB/SLFDB.html">
+            SLFDB
+          </a>
+          <a class="navbar-item" href="https://realistic3d-miun.github.io/Research/VISTA_Q_ToolKit/index.html">
+            VISTA-Q-ToolKit
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Visual Quality of Experience Toolkit for Realistic Immersive Telepresence Applications</h1>
+          <h2>17th International Conference on Quality of Multimedia Experience (QoMEX 2025), Madrid, Spain</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://3zadessg.github.io/">Manu Gond</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=S44_XWsAAAAJ&hl=en">Emin Zerman</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#">Mohammadreza Shamshirgarha</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.de/citations?user=qv9Wg2YAAAAJ&hl=de">Sebastian Knorr</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=EEMg1vMAAAAJ&hl=en">Mårten Sjöström</a><sup>1</sup>,
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Mid Sweden University</span>
+            <span class="author-block"><sup>2</sup>Technical University Berlin</span>
+            <span class="author-block"><sup>3</sup>HTW Berlin - University of Applied Sciences</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (coming soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Realistic3D-MIUN/VISTA-Q-ToolKit"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>ToolKit Code</span>
+                  </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://realistic3d-miun.github.io/Research/VISTA_Q_ToolKit/VISTA_Q_ToolKit.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-bolt"></i>
+                  </span>
+                  <span>Live Demo</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/360_Image_VR.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">VISTA-Q</span> Supports both XR and Desktop Devices
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/FaceTracking.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/MouseControl.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/Stereo_Video_VR.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/Light_Field_Desktop.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/Light_Field_VR.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/360_Image_VR.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="height: 256px; width: auto;">
+          <video autoplay controls muted loop playsinline height="312px">
+            <source src="./static/videos/360_Video_VR.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Immersive imaging applications gained a lot of traction in the last decade with the advances in capture, processing, compression, transmission, and display technologies. Recent works on spherical light fields and new view synthesis bring new challenges with respect to fast rendering of new views and a smooth quality of experience (QoE). The real-time rendering capabilities enable realistic immersive telepresence applications, which extend the traditional telepresence systems with improved visual realism and possible addition of depth cues. The recent efforts on the spherical light fields and new view synthesis approaches show that a combined light field and spherical data visualization will be beneficial for the scientific community. In this paper, we provide a WebGL- and WebXR-based visual QoE toolkit which can be used both on traditional displays and extended reality headsets, presenting various visual modalities. To validate the usefulness of the proposed toolkit, we conducted a pilot test on our publicly available spherical light field database. This toolkit can be used for easier and faster quality assessment and can support the scientific community for subjective visual QoE studies focusing on telecommunication, telepresence, and augmented telepresence applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+
+  <div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <!-- LF Desktop. -->
+    <div class="column">
+      <h2 class="title is-3">Light Fields on VR</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video autoplay controls muted loop playsinline style="height: 300px;">
+            <source src="./static/videos/Light_Field_VR.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- / LF VR. -->
+    <!-- LF Desktop. -->
+    <div class="column">
+      <h2 class="title is-3">Light Fields on Desktop</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video autoplay controls muted loop playsinline style="height: 300px;">
+            <source src="./static/videos/Light_Field_Desktop.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- / LF Desktop. -->
+  </div>
+  <div class="columns is-centered">
+    <!-- View Synthesis with Face Tracking. -->
+    <div class="column">
+      <h2 class="title is-3">View Synthesis: Face Tracking</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video autoplay controls muted loop playsinline style="height: 300px;">
+            <source src="./static/videos/FaceTracking.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- / View Synthesis with Face Tracking. -->
+    <!-- View Synthesis with Mouse Control. -->
+    <div class="column">
+      <h2 class="title is-3">View Synthesis: Mouse Control</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video autoplay controls muted loop playsinline style="height: 300px;">
+            <source src="./static/videos/MouseControl.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- / View Synthesis with Mouse Control.. -->
+  </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Supperted Data Types and Devices</h2>
+        <!-- Supported Data Types Table -->
+        <table class="table is-fullwidth is-striped is-hoverable">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Desktop</th>
+              <th>XR Headset Tethered</th>
+              <th>XR Headset Untethered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monocular Image</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Monocular Video</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Monocular 360 Image</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Monocular 360 Video</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Stereo Image</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Stereo Video</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Light Field Image</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>View Synthesis Methods</td>
+              <td>✅</td>
+              <td>❌</td>
+              <td>❌</td>
+            </tr>
+          </tbody>
+        </table>
+        <!---/ Supported Data Types Table-->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@INPROCEEDINGS{XXXXXX,
+      author={Gond, Manu and Zerman, Emin and Shamshirgarha, Mohammadreza and Knorr, Sebastian and Sjöström, Mårten},
+      booktitle={2025 17th International Conference on Quality of Multimedia Experience (QoMEX)}, 
+      title={A Spherical Light Field Database for Immersive Telecommunication and Telepresence Applications}, 
+      year={2025},
+      pages={},
+      keywords={},
+      doi={}}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We thank authors of Nerfies for opensourcing their website template. Link to their: <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
