@@ -49,7 +49,16 @@ const scenes_depth = {
       'Pasta':'Pasta.png',
       'Pikachu':'Pikachu.png',
       'Semla':'Semla.png',
-      'Forest':'Forest.png',};
+      'Forest':'Forest.png',
+      'Kangaroo':'Kangaroo.png',
+      'Train':'Train.png',
+      'Dog':'Dog.png',
+      'Ski':'Ski.png',
+      'Cat':'Cat.png',
+      'Bike':'Bike.png',
+      'Person':'Person.png',
+      'Couple':'Couple.png'
+    };
 
   console.log(scenes_depth);
   document.getElementById('backButton').addEventListener('click', function() {
@@ -70,12 +79,21 @@ function showViewer(sceneName) {
 async function loadScenes() {
   try {
     const scenes = [
+      'Kangaroo',
+      'Dog',
+      'Cat',
+
+      'Train',
+      'Bike',
       'Car',
+
       'Pikachu',
       'Pasta',
       'Forest',
+
       'Semla',
-      'Flower'
+      'Flower',
+      'Couple'
     ];
     console.log(scenes);
     const scenes_thumbnails = {
@@ -86,7 +104,15 @@ async function loadScenes() {
       'Pasta':'Pasta.jpeg',
       'Pikachu':'Pikachu.jpeg',
       'Semla':'Semla.jpeg',
-      'Forest':'Forest.jpeg'};
+      'Forest':'Forest.jpeg',
+      'Kangaroo':'Kangaroo.png',
+      'Train':'Train.jpg',
+      'Dog':'Dog.jpg',
+      'Ski':'Ski.jpg',
+      'Cat':'Cat.jpg',
+      'Bike':'Bike.jpg',
+      'Person':'Person.jpg',
+      'Couple':'Couple.jpg'};
 
     const grid = document.getElementById('sceneGrid');
     if (!grid) {
